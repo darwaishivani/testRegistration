@@ -1,0 +1,290 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: "Gilroy", cursive;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container .card {
+	position: relative;
+	margin: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+.container .card img {
+  margin-top: 20px;
+	height: 150px;
+	width: 150px;
+  border-radius: 50%;
+}
+.icon-size {
+	font-size: 30px;
+  /* color: red; */
+}
+
+/* login page  from here */
+
+.fullscreen {
+	height: 100vh;
+	width: 100vw;
+	background-color: #f4c531;
+}
+.body {
+	height: 550px;
+	width: 550px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login_form {
+	width: 380px;
+	height: 300px;
+	background-color: #ffffff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.login_form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+	color: #2e0d30;
+}
+
+.login_form input {
+	font-size: 15px;
+	font-weight: 400;
+	color: #3f3554;
+	padding: 4px;
+	border: none;
+	border-bottom: 2px solid #3f3554;
+	outline: none;
+	margin-bottom: 15px;
+}
+
+.login_form button {
+	font-size: 16px;
+	padding: 13px;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	background-color: #f4c531;
+	color: #2e0d30;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 3px;
+	margin-top: 13px;
+}
+
+.panda-face {
+	height: 120px;
+	width: 135px;
+	background-color: #ffffff;
+	border: 3px solid #2e0d30;
+	border-radius: 120px 120px 90px 90px;
+	position: absolute;
+	top: 28px;
+	left: 38%;
+}
+
+.blush-l,
+.blush-r {
+	background-color: #ff8bb1;
+	height: 16px;
+	width: 22px;
+	border-radius: 50%;
+	position: absolute;
+	top: 64px;
+}
+.blush-l {
+	left: 16px;
+	transform: rotate(25deg);
+}
+
+.blush-r {
+	right: 16px;
+	transform: rotate(-25deg);
+}
+
+.eye-l,
+.eye-r {
+	background-color: #3f3554;
+	width: 32px;
+	height: 35px;
+	border-radius: 32px;
+	position: absolute;
+	top: 35px;
+}
+
+.eye-l {
+	left: 22px;
+	transform: rotate(20deg);
+}
+
+.eye-r {
+	right: 22px;
+	transform: rotate(-20deg);
+}
+
+.eyeball-l,
+.eyeball-r {
+	height: 10px;
+	width: 10px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	transition: 1s;
+}
+
+.eyeball-l {
+	transform: rotate(20deg);
+}
+
+.eyeball-r {
+	transform: rotate(-20deg);
+}
+
+.nose {
+	height: 16px;
+	width: 16px;
+	background-color: #3f3554;
+	position: absolute;
+	top: 67px;
+	border-radius: 18px 0 0 4px;
+	transform: rotate(45deg);
+	left: 44%;
+}
+
+.nose-line {
+	background-color: #3f3554;
+	position: absolute;
+	height: 10px;
+	width: 1.5px;
+	top: 12px;
+	left: 16px;
+	transform: rotate(-45deg);
+}
+
+.mouth-l,
+.mouth-r {
+	height: 12px;
+	width: 15px;
+	background-color: transparent;
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: 0 3px #3f3554;
+}
+.mouth-l {
+	top: 85px;
+	left: 50px;
+}
+
+.mouth-r {
+	top: 85px;
+	right: 50px;
+}
+
+.ear-l,
+.ear-r {
+	background-color: #3f3554;
+	height: 40px;
+	width: 45px;
+	border: 3px solid #2e0d30;
+	border-radius: 40px 40px 0 0;
+	position: absolute;
+	top: 28px;
+}
+.ear-l {
+	left: 185px;
+	transform: rotate(-55deg);
+}
+
+.ear-r {
+	right: 184px;
+	transform: rotate(55deg);
+}
+
+.hand-l,
+.hand-r {
+	background-color: #3f3554;
+	height: 45px;
+	width: 40px;
+	border: 3px solid #2e0d30;
+	border-radius: 10px 10px 35px 35px;
+	position: absolute;
+	top: 125px;
+	transition: 1s;
+}
+
+.hand-l {
+	left: 120px;
+}
+
+.hand-r {
+	right: 120px;
+}
+
+.paw-l,
+.paw-r {
+	background-color: #3f3554;
+	height: 50px;
+	width: 50px;
+	border: 3px solid #2e0d30;
+	border-radius: 40px 40px 19px 19px;
+	position: absolute;
+	top: 380px;
+}
+
+.paw-l {
+	left: 160px;
+}
+
+.paw-r {
+	right: 160px;
+}
+
+.paw-l-left,
+.paw-r-right {
+	position: absolute;
+	height: 22px;
+	width: 28px;
+	top: 18px;
+	left: 9px;
+	border-radius: 9px 9px 10px 10px;
+	background-color: #ffffff;
+}
+
+.paw-l-circle,
+.paw-r-circle {
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	top: 5px;
+	left: 18px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 12px 4px #ffffff, -12px 4px #ffffff;
+}

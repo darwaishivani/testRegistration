@@ -1,0 +1,14 @@
+/ = show a  page with a form to make account
+
+/profile = to show profile
+
+/feed = show all user
+
+/like/:id = like profile
+
+get -/edit/:id = to show a page with all details filled in a form
+
+post-/edit/:id = update a userwith new details 
+
+/delete/:id = delete a user  
+
